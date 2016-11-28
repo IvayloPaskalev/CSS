@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI';
+    font-size: 12px;
+    width: 423px;
+    padding: 5px;
+    margin: 5px;
+}
+
+#container {
+    padding: 12px 6px 6px 6px;
+    border: 1px solid black;
+    border-radius: 7px;
+    box-shadow: 3px 3px 18px #000;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b3defb+0,eff9ff+22,a6d5f5+100 */
+    background: #b3defb;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #b3defb 0%, #eff9ff 22%, #a6d5f5 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #b3defb 0%, #eff9ff 22%, #a6d5f5 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #b3defb 0%, #eff9ff 22%, #a6d5f5 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#b3defb', endColorstr='#a6d5f5', GradientType=0);
+    /* IE6-9 */
+}
+
+p.calculator:before {
+    content: url("../images/calculator-icon.jpg");
+    margin-right: 5px;
+    float: left;
+}
+
+p.calculator {
+    margin-top: -7px;
+    padding-bottom: 1px;
+    padding-left: 3px;
+    text-shadow: 0px 0px 10px #FFFFFF;
+    /*display: inline-block;*/
+    float: left;
+}
+
+#options {
+    margin-left: 306px;
+    width: 98px;
+    height: 18px;
+    border: 1px solid #525c66;
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-top: -12px;
+    margin-bottom: 9px;
+}
+
+#minimizeButton {
+    background-image: url("../images/minimize.png");
+    width: 27px;
+    height: 18px;
+    vertical-align: top;
+}
+
+#minimizeButton:hover {
+    background-image: url("../images/minimize-hover.png");
+    width: 27px;
+    height: 18px;
+    vertical-align: top;
+}
+
+#maximizeButton {
+    background-image: url("../images/maximize.png");
+    width: 27px;
+    height: 18px;
+    margin-left: -4px;
+    vertical-align: top;
+}
+
+#closeButton {
+    background-image: url("../images/close.png");
+    width: 44px;
+    height: 18px;
+    margin-left: -4px;
+    vertical-align: top;
+}
+
+#closeButton:hover {
+    background-image: url("../images/close-hover.png");
+    width: 44px;
+    height: 18px;
+    vertical-align: top;
+}
+
+#menu {
+    border: 1px solid #5d6c7a;
+}
+
+ul {
+    list-style-type: none;
+    border-bottom: 1px solid #b6bccc;
+    padding: 1px 6px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eff2f8+22,e0e4f2+43 */
+    background: #eff2f8;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #eff2f8 22%, #e0e4f2 43%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #eff2f8 22%, #e0e4f2 43%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #eff2f8 22%, #e0e4f2 43%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#eff2f8', endColorstr='#e0e4f2', GradientType=0);
+    /* IE6-9 */
+}
+
+ul li {
+    display: inline-block;
+    margin-right: 9px;
+}
+
+li:first-letter {
+    text-decoration: underline;
+}
+
+li:hover {
+    background-color: #D5E7F8;
+}
+
+#main {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e2ebf4+0,dae5f0+38,dae5f0+100 */
+    background: #e2ebf4;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #e2ebf4 0%, #dae5f0 38%, #dae5f0 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #e2ebf4 0%, #dae5f0 38%, #dae5f0 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #e2ebf4 0%, #dae5f0 38%, #dae5f0 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#e2ebf4', endColorstr='#dae5f0', GradientType=0);
+    /* IE6-9 */
+}
+
+#main-table {
+    width: 97%;
+    text-align: center;
+    margin-top: 6px;
+    margin-left: 6px;
+    margin-bottom: 6px;
+    border-spacing: 5px;
+    border-collapse: separate;
+}
+
+td {
+    border: 1px solid #8898ab;
+    border-radius: 2px;
+    color: #1f3977;
+    box-shadow: 0 0 1px 1px white inset;
+    width: 33px;
+}
+
+.radio {
+    text-align: left;
+    padding: 5px;
+    height: 82px;
+}
+
+#display {
+    font-size: 2em;
+    font-family: Consolas;
+    color: #000000;
+    text-align: right;
+    padding: 12px 4px 6px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e5effb+0,f0f4fc+50,fdfeff+100 */
+    background: #e5effb;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #e5effb 0%, #f0f4fc 50%, #fdfeff 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #e5effb 0%, #f0f4fc 50%, #fdfeff 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #e5effb 0%, #f0f4fc 50%, #fdfeff 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#e5effb', endColorstr='#fdfeff', GradientType=0);
+    /* IE6-9 */
+}
+
+#small {
+    padding: 2px 0px 1px 4px;
+    font-family: Consolas;
+}
+
+#small td {
+    border: none;
+    line-height: 0.9em;
+    box-shadow: none;
+    height: 10px;
+    width: 30px;
+}
+
+#small td:not(:first-child) {
+    padding-left: 16px;
+}
+
+#small td.left {
+    text-align: left;
+    color: #666666;
+}
+
+#small td.right {
+    text-align: right;
+    color: #666666;
+}
+
+p.input {
+    font-size: 11px;
+    margin-top: 1px;
+    margin-bottom: -11px;
+}
+
+input {
+    float: left;
+    display: inline-block;
+    margin: 2px 1px 1px 2px;
+}
+
+.biggest {
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 14px;
+}
+
+.inactive {
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.larger {
+    font-size: 1.3em;
+}
+
+.button {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e9f0f6+33,d5e2ec+61 */
+    background: #e9f0f6;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #e9f0f6 33%, #d5e2ec 61%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #e9f0f6 33%, #d5e2ec 61%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #e9f0f6 33%, #d5e2ec 61%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#e9f0f6', endColorstr='#d5e2ec', GradientType=0);
+    /* IE6-9 */
+}
+
+.numbers {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f4f9fd+31,ebf3f8+54 */
+    background: #f4f9fd;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #f4f9fd 31%, #ebf3f8 54%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #f4f9fd 31%, #ebf3f8 54%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #f4f9fd 31%, #ebf3f8 54%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f4f9fd', endColorstr='#ebf3f8', GradientType=0);
+    /* IE6-9 */
+}
+
+.button:hover, .numbers:hover, .ms:hover {
+    border: 1px solid #ffdb00;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffecd4+25,ffe07c+53,fdf8b1+82 */
+    background: #ffecd4;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #ffecd4 25%, #ffe07c 53%, #fdf8b1 82%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffecd4 25%, #ffe07c 53%, #fdf8b1 82%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffecd4 25%, #ffe07c 53%, #fdf8b1 82%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffecd4', endColorstr='#fdf8b1', GradientType=0);
+    /* IE6-9 */
+}
+
+.backspace {
+    padding-bottom: 5px;
+}
+
+.asterisk {
+    padding-top: 2px;
+    height: 24px;
+}
+
+.smaller {
+    font-size: 11px;
+}
